@@ -57,8 +57,6 @@ def init_population(dictionary, population_size):
     # this is why I am not check population size against the number of possible unique permutations.
     # If you want to do that, you have to had in mind, that the first and the last position has to
     # be identical, which reduces the possible unique permutations and have to be calculated at the beginning
-    # if population_size > math.factorial(amount-1):
-    #    raise Exception("Size of population higher than possible unique chromosomes")
 
     population = list()
     while len(population) < population_size:
